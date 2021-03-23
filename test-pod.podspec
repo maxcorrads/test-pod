@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'test-pod'
-  s.version          = '0.1.0'
+  s.name             = 'catapush-ios-sdk-pod'
+  s.version          = '3.1.0'
   s.summary          = 'A short description of test-pod.'
 
 # This description is used to generate tags and improve search results.
