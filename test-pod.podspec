@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'maxcorrads' => 'matteo@app24h.it' }
-  s.source = { :http => 'https://catapush-sdk-ios.s3.amazonaws.com/catapush-ios-sdk-pod-2.1.11.zip' }
+  s.source = { :http => 'https://catapush-sdk-ios.s3.amazonaws.com/catapush-sdk-ios/test.zip' }
 
   s.requires_arc = true
   s.source_files = 'Pod/Classes/**/*','CatapushKit/Catapush.h'
