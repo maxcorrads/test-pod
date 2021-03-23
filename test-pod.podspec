@@ -27,6 +27,15 @@ TODO: Add long description of the pod here.
   s.author           = { 'maxcorrads' => 'matteo@app24h.it' }
   s.source = { :http => 'https://catapush-sdk-ios.s3.amazonaws.com/catapush-ios-sdk-pod-2.1.11.zip' }
 
-  s.ios.deployment_target = '10.0'
+  s.requires_arc = true
+  s.source_files = 'Pod/Classes/**/*','CatapushKit/Catapush.h'
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "$(SRCROOT)/Pods/**", 'OTHER_LDFLAGS' => '-ObjC -lxml2' }
+  s.frameworks = 'Security', 'CFNetwork','SystemConfiguration','CoreData'
+  s.libraries = 'resolv'
+  s.resource = 'CatapushKit/CatapushLibBundle.bundle'
+  s.preserve_paths = 'CatapushKit/**/*.*'
+  s.vendored_libraries = 'CatapushKit/libCatapushLib.a'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
 end
